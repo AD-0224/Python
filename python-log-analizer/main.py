@@ -6,12 +6,15 @@ def main(): #on crée la fcton main
 
     try:
         levels = analyze_file(filepath)
-        print("-----Résumé-----")
-        for lvl, count in levels.items(): #paire clé valeur
-            print(f"{lvl}: {count}")
+        if not levels:
+            print("Aucun niveau trouvé dans le fichier")
+        else:
+            print("-----Résumé-----")
+            for lvl, count in levels.items(): #paire clé valeur
+                print(f"{lvl}: {count}")
 
     except FileNotFoundError:
         print("Fichier introuvable")
 
-if __name__=="__main__":
+if __name__=="__main__": #guard
     main()
