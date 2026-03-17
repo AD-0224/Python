@@ -51,7 +51,4 @@ Portfolio-ready case studies — projets concrets prêts pour un portfolio.
 
 ---
 
-📫 Contact & Freelance
-Freelance inquiries & collaboration — collaboration freelance :
-📧 zelvia.dev@gmail.com
 🌐 Portfolio website — en cours de construction | coming soon

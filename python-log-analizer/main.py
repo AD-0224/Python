@@ -1,7 +1,7 @@
-from cli import get_filepath #on va dans le fichier cli et on recup la fct get_filepath
+from cli import get_filepath #we go into the CLI file and retrieve the get_filepath function
 from analyzer import analyze_file
 
-def main(): #on crée la fcton main
+def main(): #we create the main function
     filepath = get_filepath()
 
     try:
@@ -10,7 +10,7 @@ def main(): #on crée la fcton main
             print("Aucun niveau trouvé dans le fichier")
         else:
             print("-----Résumé-----")
-            for lvl, count in levels.items(): #paire clé valeur
+            for lvl, count in levels.items(): #value key pair
                 print(f"{lvl}: {count}")
 
     except FileNotFoundError:

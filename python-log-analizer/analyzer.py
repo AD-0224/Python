@@ -1,4 +1,4 @@
-import re #module d'expressions reguliere
+import re #regular expression module
 
 VALID_LEVELS = {"INFO","WARNING", "ERROR", "DEBUG", "CRITICAL"}
 def analyze_file(filepath):
@@ -10,5 +10,6 @@ def analyze_file(filepath):
             for word in matches:
                 word = word.upper()
                 if word in VALID_LEVELS:
-                    levels[word] = levels.get(word, 0) + 1 #dictionnaire vide au debut recupere la valeur actuelle si elle existe sinon 0 et le +1 incrementat° simple
+                    levels[word] = levels.get(word, 0) + 1 
+                    #empty dictionary at the beginning, retrieves the current value if it exists, otherwise 0 and +1 simple increment
     return levels

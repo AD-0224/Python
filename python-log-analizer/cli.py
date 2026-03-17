@@ -1,6 +1,6 @@
 import sys
 
-def get_filepath(): #recup chemin fichier
+def get_filepath(): #retrieve file path
     if len(sys.argv) < 2:
         print("Usage: python3 main.py <logfile>")
         sys.exit(1)
