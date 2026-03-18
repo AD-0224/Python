@@ -1,54 +1,109 @@
-🐍 Python – Practical Engineering & Automation Projects | Projets d'Ingénierie & d'Automatisation
-A curated repository documenting my transition from foundational programming to production-oriented Python development — un dépôt structuré retraçant ma transition des fondamentaux vers un développement Python orienté production.
-This repository focuses on building practical, reusable, and structured solutions — not just exercises, but tools designed with real-world applications in mind. Ce dépôt met l'accent sur des solutions concrètes, réutilisables et structurées — pas seulement des exercices, mais des outils pensés pour des cas réels.
+---————————————— ENGLISH —————————————---
+
+🐍 Python – Practical Engineering & Automation Projects
+
+A curated repository documenting my transition from foundational programming to production-oriented Python development.
+
+This repository focuses on building practical, reusable, and structured solutions — not just exercises, but tools designed with real-world applications in mind.
 
 ---
 
-🎯 Focus & Positioning | Positionnement
-Clean, maintainable, modular Python code — code Python propre, maintenable et modulaire.
-Practical problem-solving through automation — résolution de problèmes concrets via l'automatisation.
-Reusable components suitable for freelance projects — composants réutilisables adaptés à des missions freelance.
+🎯 Positioning
+- Clean, maintainable, modular Python code.
+- Practical problem-solving through automation.
+- Reusable and well-structured components.
 
 ---
 
-🧩 Technical Scope | Périmètre Technique
-Core Foundations | Fondamentaux
-Control flow & functional decomposition — flux de contrôle et structuration fonctionnelle.
-Data structures (lists, dicts, sets, tuples) — structures de données essentielles.
-Error handling & defensive programming — gestion d'erreurs et programmation défensive.
-Code readability & documentation — lisibilité du code et documentation.
+🧩 Technical Scope
+**Core Foundations**
+- Control flow & functional decomposition.
+- Data structures (lists, dicts, sets, tuples).
+- Error handling & defensive programming.
+- Code readability & documentation.
 
-Algorithms & Logic | Algorithmie & Logique
-Sorting & searching strategies — algorithmes de tri et de recherche.
-Recursion & complexity awareness — récursivité et compréhension de la complexité.
-Problem-solving patterns — logique structurée et patterns de résolution de problèmes.
+**Algorithms & Logic**
+- Sorting & searching strategies.
+- Recursion & complexity awareness.
+- Problem-solving patterns.
 
-Practical Engineering | Ingénierie Pratique
-File processing & data parsing — traitement de fichiers et parsing de données.
-CLI tools with argparse — outils en ligne de commande.
-Automation scripts — scripts d'automatisation.
-Modular project structure — organisation modulaire des projets.
+**Practical Engineering**
+- File processing & data parsing.
+- CLI tools with argparse.
+- Automation scripts.
+- Modular project structure.
 
-Code Quality | Qualité du Code
-Structured project architecture — architecture claire et cohérente.
-Version control discipline — discipline Git.
-Progressive refactoring — refactorisation progressive.
-Introduction to testing practices — introduction aux bonnes pratiques de test.
-
----
-
-🚀 Professional Objective | Objectif Professionnel
-This repository supports my progression toward freelance development in C/C++ and Python — ce dépôt accompagne ma progression vers le développement freelance en C/C++ et Python. The goal is to deliver reliable automation solutions and structured backend-oriented logic — l'objectif est de livrer des solutions d'automatisation fiables et une logique backend structurée.
+**Code Quality**
+- Structured project architecture.
+- Version control discipline.
+- Progressive refactoring.
+- Introduction to testing practices.
 
 ---
 
-🔭 Next Steps | Prochaines Étapes
-Object-Oriented design refinement — approfondissement de la conception POO.
-Test integration with pytest — intégration des tests.
-API interaction & small backend services — interaction avec des API et petits services backend.
-Performance optimization — optimisation des performances.
-Portfolio-ready case studies — projets concrets prêts pour un portfolio.
+🚀 Professional Objective
+This repository supports my progression toward production-oriented Python development. The goal is to deliver reliable automation solutions and structured backend-oriented logic.
 
 ---
 
-🌐 Portfolio website — en cours de construction | coming soon
+🔭 Next Steps
+- Object-Oriented design refinement.
+- Test integration with pytest.
+- API interaction & small backend services.
+- Performance optimization.
+- Portfolio-ready case studies.
+
+---————————————— FRANÇAIS ————————————---
+
+🐍 Python – Projets d'Ingénierie & d'Automatisation
+
+Un dépôt structuré retraçant ma transition des fondamentaux vers un développement Python orienté production.
+
+Ce dépôt met l'accent sur des solutions concrètes, réutilisables et structurées — pas seulement des exercices, mais des outils pensés pour des cas réels.
+
+---
+
+🎯 Positionnement
+- Code Python propre, maintenable et modulaire.
+- Résolution de problèmes concrets via l'automatisation.
+- Composants réutilisables et bien structurés.
+
+---
+
+🧩 Périmètre Technique
+**Fondamentaux**
+- Flux de contrôle et structuration fonctionnelle.
+- Structures de données essentielles (listes, dicts, sets, tuples).
+- Gestion d'erreurs et programmation défensive.
+- Lisibilité du code et documentation.
+
+**Algorithmie & Logique**
+- Algorithmes de tri et de recherche.
+- Récursivité et compréhension de la complexité.
+- Logique structurée et patterns de résolution de problèmes.
+
+**Ingénierie Pratique**
+- Traitement de fichiers et parsing de données.
+- Outils en ligne de commande avec argparse.
+- Scripts d'automatisation.
+- Organisation modulaire des projets.
+
+**Qualité du Code**
+- Architecture claire et cohérente.
+- Discipline Git.
+- Refactorisation progressive.
+- Introduction aux bonnes pratiques de test.
+
+---
+
+🚀 Objectif Professionnel
+Ce dépôt accompagne ma progression vers un développement Python orienté production. L'objectif est de livrer des solutions d'automatisation fiables et une logique backend structurée.
+
+---
+
+🔭 Prochaines Étapes
+- Approfondissement de la conception POO.
+- Intégration des tests avec pytest.
+- Interaction avec des API et petits services backend.
+- Optimisation des performances.
+- Projets concrets prêts pour un portfolio.
