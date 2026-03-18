@@ -42,6 +42,7 @@ This repository focuses on building practical, reusable, and structured solution
 ---
 
 🚀 Professional Objective
+
 This repository supports my progression toward production-oriented Python development. The goal is to deliver reliable automation solutions and structured backend-oriented logic.
 
 ---
@@ -52,6 +53,8 @@ This repository supports my progression toward production-oriented Python develo
 - API interaction & small backend services.
 - Performance optimization.
 - Portfolio-ready case studies.
+
+
 
 ---————————————— FRANÇAIS ————————————---
 
