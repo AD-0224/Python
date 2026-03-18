@@ -1,4 +1,4 @@
----————————————— ENGLISH —————————————---
+════════════ ENGLISH ════════════
 
 🐍 Python – Practical Engineering & Automation Projects
 
@@ -9,6 +9,7 @@ This repository focuses on building practical, reusable, and structured solution
 ---
 
 🎯 Positioning
+
 - Clean, maintainable, modular Python code.
 - Practical problem-solving through automation.
 - Reusable and well-structured components.
@@ -16,6 +17,7 @@ This repository focuses on building practical, reusable, and structured solution
 ---
 
 🧩 Technical Scope
+
 **Core Foundations**
 - Control flow & functional decomposition.
 - Data structures (lists, dicts, sets, tuples).
@@ -48,15 +50,14 @@ This repository supports my progression toward production-oriented Python develo
 ---
 
 🔭 Next Steps
+
 - Object-Oriented design refinement.
 - Test integration with pytest.
 - API interaction & small backend services.
 - Performance optimization.
 - Portfolio-ready case studies.
 
-
-
----————————————— FRANÇAIS ————————————---
+════════════ FRANÇAIS ════════════
 
 🐍 Python – Projets d'Ingénierie & d'Automatisation
 
@@ -67,6 +68,7 @@ Ce dépôt met l'accent sur des solutions concrètes, réutilisables et structur
 ---
 
 🎯 Positionnement
+
 - Code Python propre, maintenable et modulaire.
 - Résolution de problèmes concrets via l'automatisation.
 - Composants réutilisables et bien structurés.
@@ -74,6 +76,7 @@ Ce dépôt met l'accent sur des solutions concrètes, réutilisables et structur
 ---
 
 🧩 Périmètre Technique
+
 **Fondamentaux**
 - Flux de contrôle et structuration fonctionnelle.
 - Structures de données essentielles (listes, dicts, sets, tuples).
@@ -100,11 +103,13 @@ Ce dépôt met l'accent sur des solutions concrètes, réutilisables et structur
 ---
 
 🚀 Objectif Professionnel
+
 Ce dépôt accompagne ma progression vers un développement Python orienté production. L'objectif est de livrer des solutions d'automatisation fiables et une logique backend structurée.
 
 ---
 
 🔭 Prochaines Étapes
+
 - Approfondissement de la conception POO.
 - Intégration des tests avec pytest.
 - Interaction avec des API et petits services backend.
