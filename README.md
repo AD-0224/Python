@@ -57,6 +57,10 @@ This repository supports my progression toward production-oriented Python develo
 - Performance optimization.
 - Portfolio-ready case studies.
 
+---
+
+
+
 ════════════ FRANÇAIS ════════════
 
 🐍 Python – Projets d'Ingénierie & d'Automatisation
