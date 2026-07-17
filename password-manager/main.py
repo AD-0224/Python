@@ -1,4 +1,5 @@
 import sys
+import argparse
 from storage import load_passwords, save_passwords
 
 def add_password(service):
@@ -55,31 +56,34 @@ def update_account(service):
         print("Compte introuvable")
 
 
-if len(sys.argv) < 2:
-    print("Usage : python3 main.py <commande>")
-    exit()
+parser = argparse.ArgumentParser()
+subparsers = parser.add_subparsers(dest="command")
 
-command = sys.argv[1]
+add_parser = subparsers.add_parser("add")
+list_parser = subparsers.add_parser("list")
+get_parser = subparsers.add_parser("get")
+update_parser = subparsers.add_parser("update")
+delete_parser = subparsers.add_parser("delete")
 
-if command == "add":
-    service = sys.argv[2]
-    add_password(service)
+add_parser.add_argument("--service", required=True)
+get_parser.add_argument("--service", required=True)
+update_parser.add_argument("--service", required=True)
+delete_parser.add_argument("--service", required=True)
 
-elif command == "list":
+args = parser.parse_args()
+
+if args.command == "add":
+    add_password(args.service)
+
+elif args.command == "list":
     list_passwords()
 
-elif command == "get":
-    service = sys.argv[2]
-    get_account(service)
+elif args.command == "get":
+    get_account(args.service)
 
-elif command == "delete":
-    service = sys.argv[2]
-    delete_account(service)
+elif args.command == "delete":
+    delete_account(args.service)
 
-elif command == "update":
-    service = sys.argv[2]
-    update_account(service)
-
-else:
-    print("Commande inconnue")
+elif args.command == "update":
+    update_account(args.service)
 
