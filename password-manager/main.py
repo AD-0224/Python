@@ -1,10 +1,10 @@
-import sys
 import argparse
+import getpass
 from storage import load_passwords, save_passwords
 
 def add_password(service):
     username = input("Nom d'utilisateur : ")
-    password = input("Mot de passe : ")
+    password = getpass.getpass("Mot de passe: ")
 
     passwords = load_passwords()
 
