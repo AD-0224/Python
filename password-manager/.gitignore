@@ -1,0 +1,8 @@
+# Python
+__pycache__/
+*.pyc
+
+# Secrets
+master.hash
+salt.bin
+passwords.json
