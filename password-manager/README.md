@@ -2,7 +2,7 @@
 
 ---
 
-## ════════════ ENGLISH ════════════
+## 🇬🇧 English
 
 ### 🎯 Objective
 
@@ -119,15 +119,14 @@ Password: mY$3cureP@ss
 
 ---
 
-### 📈 Level
+### 📈 Compétences démontrées
 
-Intermediate Python scripting project.
+Ce projet met en œuvre un gestionnaire de mots de passe sécurisé utilisant des pratiques cryptographiques modernes, une architecture Python modulaire et une interface en ligne de commande.
 
-Focus on cryptographic security, modular architecture, and local secret management.
 
 ---
 
-## ════════════ FRANÇAIS ════════════
+## 🇫🇷 Français
 
 ### 🎯 Objectif
 
@@ -244,8 +243,6 @@ Password: mY$3cureP@ss
 
 ---
 
-### 📈 Niveau
+### 📈 Skills Demonstrated
 
-Intermédiaire — projet de scripting Python.
-
-L'accent est mis sur la sécurité cryptographique, l'architecture modulaire et la gestion locale de secrets.
+This project implements a secure password manager using modern cryptographic practices, a modular Python architecture, and a command-line interface.
