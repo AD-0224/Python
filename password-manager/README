@@ -1,1 +1,228 @@
-Project in process
+════════════ ENGLISH ════════════
+
+🔐 Password Manager
+
+🎯 Objective
+
+Build a local password manager protected by a master password, capable of storing, retrieving, generating, and deleting credentials — all encrypted at rest using a key derived from the master password.
+
+⚙️ Features
+✅ Master password setup and verification
+✅ Password encryption using Fernet (AES)
+✅ Key derivation from master password (PBKDF2)
+✅ Automatic secure password generation
+✅ Add, list, get, update, delete credentials
+✅ Encrypted local storage in JSON format
+✅ Sensitive data excluded from version control
+
+---
+
+🏗️ Project Structure
+password-manager/
+│
+├── main.py          # Entry point & CLI routing
+├── auth.py          # Master password hashing & verification
+├── crypto.py        # Encryption, decryption, key derivation
+├── generator.py     # Secure password generation
+├── storage.py       # JSON load/save logic
+├── passwords.json   # Encrypted credentials (gitignored)
+├── master.hash      # Hashed master password (gitignored)
+├── salt.bin         # Cryptographic salt (gitignored)
+├── .gitignore
+└── README.md
+
+⚠️ master.hash, salt.bin, and passwords.json are excluded from version control via .gitignore.
+
+---
+
+▶️ Usage
+First run — set up master password:
+
+bash
+python3 main.py <command>
+# Prompts for master password creation on first use
+Available commands:
+
+bash
+python3 main.py add --service github        # Add credentials
+python3 main.py list                        # List all services
+python3 main.py get --service github        # Get credentials
+python3 main.py update --service github     # Update password
+python3 main.py delete --service github     # Delete entry
+Output example:
+
+Master password: ••••••••
+Access granted.
+Username: aida
+Password: mY$3cureP@ss
+
+---
+
+🔒 Security Overview
+Mechanism	Description
+bcrypt	Master password hashing
+PBKDF2 + SHA-256	Key derivation (100 000 iterations)
+os.urandom(16)	Random cryptographic salt
+Fernet (AES-128)	Symmetric password encryption
+getpass	Hidden password input
+.gitignore	Secrets excluded from repo
+
+---
+
+🧠 Technical Concepts
+Password hashing with bcrypt
+Key derivation with PBKDF2-HMAC-SHA256
+Symmetric encryption/decryption with cryptography.fernet
+Secure random generation with secrets
+CLI argument parsing with argparse
+File handling in binary and text modes
+Modular architecture with separation of concerns
+Defensive programming (missing files, wrong password, unknown service)
+
+---
+
+🚀 Design Choices
+The encryption key is never stored — it is re-derived from the master password at each session.
+bcrypt and PBKDF2 are used separately: one for authentication, one for encryption.
+Sensitive files are excluded from Git from the start.
+Modular structure makes each layer independently testable and extensible.
+
+---
+
+📌 Future Improvements
+ Clipboard copy (auto-clear after 30s)
+ Password strength indicator
+ Export to encrypted CSV
+ Unit tests with pytest
+ Master password change support
+ Search/filter by service name
+
+ ---
+
+📈 Level
+Intermediate Python scripting project.
+Focus on cryptographic security, modular architecture, and local secret management.
+
+
+--- 
+
+
+════════════ FRANÇAIS ════════════
+
+🎯 Objectif
+
+Construire un gestionnaire de mots de passe local protégé par un mot de passe maître, capable de stocker, récupérer, générer et supprimer des identifiants — le tout chiffré au repos à l'aide d'une clé dérivée du mot de passe maître.
+
+⚙️ Fonctionnalités
+✅ Création et vérification du mot de passe maître
+✅ Chiffrement des mots de passe via Fernet (AES)
+✅ Dérivation de clé depuis le mot de passe maître (PBKDF2)
+✅ Génération automatique de mots de passe sécurisés
+✅ Ajout, liste, affichage, mise à jour, suppression
+✅ Stockage local chiffré au format JSON
+✅ Données sensibles exclues du dépôt Git
+
+---
+
+🏗️ Structure du Projet
+password-manager/
+│
+├── main.py          # Point d'entrée et routage CLI
+├── auth.py          # Hachage et vérification du mot de passe maître
+├── crypto.py        # Chiffrement, déchiffrement, dérivation de clé
+├── generator.py     # Génération de mots de passe sécurisés
+├── storage.py       # Lecture et écriture JSON
+├── passwords.json   # Identifiants chiffrés (gitignored)
+├── master.hash      # Hash du mot de passe maître (gitignored)
+├── salt.bin         # Sel cryptographique (gitignored)
+├── .gitignore
+└── README.md
+
+⚠️ master.hash, salt.bin et passwords.json sont exclus du dépôt via .gitignore.
+
+---
+
+▶️ Utilisation
+Premier lancement — définir le mot de passe maître :
+
+bash
+python3 main.py <commande>
+# Demande la création du mot de passe maître au premier lancement
+Commandes disponibles :
+
+bash
+python3 main.py add --service github        # Ajouter des identifiants
+python3 main.py list                        # Lister les services
+python3 main.py get --service github        # Afficher les identifiants
+python3 main.py update --service github     # Modifier le mot de passe
+python3 main.py delete --service github     # Supprimer une entrée
+Exemple de sortie :
+
+Master password: ••••••••
+Access granted.
+Username: aida
+Password: mY$3cureP@ss
+
+---
+
+🔒 Sécurité
+Mécanisme	Description
+bcrypt	Hachage du mot de passe maître
+PBKDF2 + SHA-256	Dérivation de clé (100 000 itérations)
+os.urandom(16)	Sel aléatoire cryptographique
+Fernet (AES-128)	Chiffrement symétrique des mots de passe
+getpass	Saisie masquée des mots de passe
+.gitignore	Secrets exclus du dépôt
+
+---
+
+🧠 Notions Techniques
+Hachage de mots de passe avec bcrypt
+Dérivation de clé avec PBKDF2-HMAC-SHA256
+Chiffrement/déchiffrement symétrique via cryptography.fernet
+Génération sécurisée avec secrets
+Gestion des arguments CLI avec argparse
+Manipulation de fichiers en mode binaire et texte
+Architecture modulaire avec séparation des responsabilités
+Programmation défensive (fichiers manquants, mauvais mot de passe, service inconnu)
+
+---
+
+🚀 Choix de Conception
+La clé de chiffrement n'est jamais stockée — elle est recalculée à chaque session depuis le mot de passe maître.
+bcrypt et PBKDF2 sont utilisés séparément : l'un pour l'authentification, l'autre pour le chiffrement.
+Les fichiers sensibles sont exclus de Git dès le départ.
+La structure modulaire rend chaque couche indépendamment testable et extensible.
+
+---
+
+📌 Améliorations Futures
+ Copie dans le presse-papiers (effacement automatique après 30s)
+ Indicateur de robustesse du mot de passe
+ Export en CSV chiffré
+ Tests unitaires avec pytest
+ Support du changement de mot de passe maître
+ Recherche/filtre par nom de service
+
+ ---
+
+📈 Niveau
+Intermédiaire — projet de scripting Python.
+L'accent est mis sur la sécurité cryptographique, l'architecture modulaire et la gestion locale de secrets.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

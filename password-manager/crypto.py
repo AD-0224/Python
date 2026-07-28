@@ -1,8 +1,8 @@
-from cryptography.fernet import Fernet
-
 import base64
 import hashlib
 import os
+
+from cryptography.fernet import Fernet
 
 def generate_salt():
     return os.urandom(16)
@@ -15,10 +15,8 @@ def load_salt():
     with open("salt.bin", "rb") as file:
         return file.read()
 
-def generate_key():
-    return Fernet.generate_key()
-
 def derive_key(password, salt):
+# Generate a secure encryption key from the master password using PBKDF2
     key = hashlib.pbkdf2_hmac(
         "sha256",
         password.encode(),

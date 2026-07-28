@@ -8,14 +8,14 @@ from crypto import encrypt_password, decrypt_password, derive_key, load_salt, ge
 from generator import generate_password
 
 def add_password(service, key):
-    username = input("Nom d'utilisateur : ")
-    choice = input("Générer un mot de passe automatiquement ? (o/n) : ")
+    username = input("Username : ")
+    choice = input("Generate a password automatically? (y/n) : ")
 
-    if choice.lower() == "o":
+    if choice.lower() == "y":
         password = generate_password()
-        print("Mot de passe généré :", password)
+        print("Generated password :", password)
     else:
-        password = getpass.getpass("Mot de passe : ")
+        password = getpass.getpass("Password : ")
 
     passwords = load_passwords()
     encrypted_password = encrypt_password(password, key)
@@ -25,7 +25,7 @@ def add_password(service, key):
     }
     save_passwords(passwords)
 
-    print(f"Mot de passe pour {service} ajouté.")
+    print(f"Password for {service} added.")
 
 def list_passwords():
     passwords = load_passwords()
@@ -46,7 +46,7 @@ def get_account(service, key):
         print("Password :", password)
 
     else:
-        print("Compte introuvable")
+        print("Account not found.")
 
 def delete_account(service):
     passwords = load_passwords()
@@ -54,42 +54,42 @@ def delete_account(service):
     if service in passwords:
         del passwords[service]
         save_passwords(passwords) 
-        print(f"Compte {service} supprimé.")
+        print(f"Account {service} deleted.")
     else:
-        print("Compte introuvable")
+        print("Account not found.")
 
 def update_account(service, key):
     passwords = load_passwords()
 
     if service in passwords:
         account = passwords[service]
-        new_password = getpass.getpass("Nouveau mot de passe : ")
+        new_password = getpass.getpass("New password: ")
         account["password"] = encrypt_password(new_password, key).decode()
 
         save_passwords(passwords)
-        print(f"Compte {service} mis à jour.")
+        print(f"Account {service} updated.")
     else:
-        print("Compte introuvable")
+        print("Account not found.")
 
 if not os.path.exists("master.hash"):
-    print("Création du master password")
+    print("Creating master password")
 
-    password = getpass.getpass("Choisissez un master password : ")
+    password = getpass.getpass("Choose a master password: ")
 
     save_master_password(password)
 
     salt = generate_salt()
     save_salt(salt)
 
-    print("Master password créé.")
+    print("Master password created.")
 
 else:
-    password = getpass.getpass("Master password : ")
+    password = getpass.getpass("Master password: ")
 
     if check_master_password(password):
-        print("Accès autorisé.")
+        print("Access granted.")
     else:
-        print("Mot de passe incorrect.")
+        print("Incorrect password.")
         exit()
 
 
@@ -98,8 +98,6 @@ if not os.path.exists("salt.bin"):
     save_salt(salt)
 else:
     salt = load_salt()
-
-key = derive_key(password, salt)
 
 key = derive_key(password, salt)
 parser = argparse.ArgumentParser()
