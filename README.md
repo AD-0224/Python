@@ -1,4 +1,4 @@
-════════════ ENGLISH ════════════
+## 🇬🇧 English
 
 🐍 Python – Practical Engineering & Automation Projects
 
@@ -61,7 +61,7 @@ This repository supports my progression toward production-oriented Python develo
 
 
 
-════════════ FRANÇAIS ════════════
+## 🇫🇷 Français
 
 🐍 Python – Projets d'Ingénierie & d'Automatisation
 
