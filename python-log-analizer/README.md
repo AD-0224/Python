@@ -1,4 +1,4 @@
-════════════ ENGLISH ════════════
+## 🇬🇧 English
 
 📊 Log Analyzer
 
@@ -95,7 +95,7 @@ Beginner → Intermediate Python scripting project. Focus on clean structure, mo
 
 
 
-════════════ FRANÇAIS ════════════
+## 🇫🇷 Français
 
 📊 Log Analyzer
 
