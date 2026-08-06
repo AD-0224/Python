@@ -119,11 +119,9 @@ Password: mY$3cureP@ss
 
 ---
 
-### 📈 Compétences démontrées
+### 📈 Skills Demonstrated
 
-Ce projet met en œuvre un gestionnaire de mots de passe sécurisé utilisant des pratiques cryptographiques modernes, une architecture Python modulaire et une interface en ligne de commande.
-
-
+This project implements a secure password manager using modern cryptographic practices, a modular Python architecture, and a command-line interface.
 ---
 
 ## 🇫🇷 Français
@@ -243,6 +241,6 @@ Password: mY$3cureP@ss
 
 ---
 
-### 📈 Skills Demonstrated
+### 📈 Compétences démontrées
 
-This project implements a secure password manager using modern cryptographic practices, a modular Python architecture, and a command-line interface.
+Ce projet met en œuvre un gestionnaire de mots de passe sécurisé utilisant des pratiques cryptographiques modernes, une architecture Python modulaire et une interface en ligne de commande.
